@@ -12,12 +12,12 @@ const Table = props => {
         </tr>
       </thead>
       <tbody className="table__tbody">
-        {props.phones.map(phone => (
-          <tr key={phone.id}>
-            <td>{phone.id}</td>
-            <td>{phone.name}</td>
-            <td>{phone.price}</td>
-            <td>{phone.quantity}</td>
+        {props.electronics.map(electronic => (
+          <tr key={electronic.id}>
+            <td>{electronic.id}</td>
+            <td>{electronic.name}</td>
+            <td>{electronic.price}</td>
+            <td>{electronic.quantity}</td>
           </tr>
         ))}
       </tbody>

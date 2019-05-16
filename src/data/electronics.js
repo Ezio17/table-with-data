@@ -1,4 +1,4 @@
-const phones = [
+const electronics = [
   {
     id: 1,
     name: 'Play Station 4',
@@ -19,4 +19,4 @@ const phones = [
   },
 ];
 
-export default phones;
+export default electronics;

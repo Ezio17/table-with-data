@@ -1,6 +1,6 @@
 import React from 'react';
 
-import phones from '../data/phones';
+import electronics from '../data/electronics';
 import Table from './Table';
 import Search from './Search';
 
@@ -9,7 +9,7 @@ class Main extends React.Component {
     super(props);
 
     this.state = {
-      phones,
+      electronics,
       search: '',
     };
 
@@ -21,8 +21,8 @@ class Main extends React.Component {
   }
 
   render() {
-    let phones = this.state.phones.filter(phone =>
-      phone.name
+    let electronics = this.state.electronics.filter(electronic =>
+      electronic.name
         .toLocaleLowerCase()
         .replace(/\s+/g, '')
         .includes(this.state.search.toLocaleLowerCase().replace(/\s+/g, ''))
@@ -30,7 +30,7 @@ class Main extends React.Component {
     return (
       <main>
         <Search search={this.state.search} handleChange={this.handleChange} />
-        <Table phones={phones} />
+        <Table electronics={electronics} />
       </main>
     );
   }
