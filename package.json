@@ -1,6 +1,6 @@
 {
   "name": "table-with-data",
-  "homepage": "https://ezio17.github.io/table-with-data/",
+  "homepage": "https://ezio17.github.io/table-with-data/build/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
