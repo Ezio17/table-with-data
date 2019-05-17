@@ -5,10 +5,10 @@ const Table = props => {
     <table className="table">
       <thead className="table__thead">
         <tr className="table__title">
-          <th>ID</th>
-          <th>Name</th>
-          <th>Price</th>
-          <th>Quanity</th>
+          <th onClick={() => props.sort('id')}>ID</th>
+          <th onClick={() => props.sort('name')}>Name</th>
+          <th onClick={() => props.sort('price')}>Price</th>
+          <th onClick={() => props.sort('quantity')}>Quanity</th>
         </tr>
       </thead>
       <tbody className="table__tbody">
